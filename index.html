@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Array.prototype.nenad = (callback) => {
+            console.log(this);
+            for (let i = 0; i < this.length; i++) {
+                callback(this[callback])    
+            }
+        }
+
+        let x = new Array();
+
+        x = [1,2,3,4,5,6,7]
+
+        x.nenad(d => alert(d));
+    </script>
+</body>
+</html>
